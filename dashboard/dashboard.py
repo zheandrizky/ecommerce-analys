@@ -96,7 +96,8 @@ datetime_columns = [
     "order_purchase_timestamp", 
     "shipping_limit_date"
 ]
-all_data_df = pd.read_csv('all_data.csv')
+# all_data_df = pd.read_csv('all_data.csv')
+all_data_df = pd.read_csv('https://raw.githubusercontent.com/zheandrizky/ecommerce-analys/refs/heads/main/dashboard/all_data.csv')
 all_data_df.sort_values(by="order_approved_at", inplace=True)
 all_data_df.reset_index(inplace=True)
 
