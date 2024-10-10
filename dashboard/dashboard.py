@@ -101,7 +101,7 @@ all_data_df.sort_values(by="order_approved_at", inplace=True)
 all_data_df.reset_index(inplace=True)
 
 # Load the geolocation data
-geolocation_df = pd.read_csv("../data/customers_geo.csv") 
+geolocation_df = pd.read_csv('../data/customers_geo.csv') 
 geolocation_unique = geolocation_df.drop_duplicates(subset='customer_unique_id')
 
 # Convert specified columns to datetime
